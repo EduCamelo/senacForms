@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from viagens.forms import ViagemForms
+
 def index(request):
     form= ViagemForms()
     contexto= {'form' : form}

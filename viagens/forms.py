@@ -11,3 +11,5 @@ class ViagemForms(forms.Form):
     data_volta = forms.DateField(label='Volta', widget=DatePicker())
     data_pesquisa = forms.DateField(label='Data de pesquisa', disabled=True, initial=datetime.today)
     classe_viagem = forms.ChoiceField(label='Opção de voo', choices= tipos_de_classe)
+    adicionais = forms.CharField(label='Informações Adicionais',max_length=200, widget=forms.Textarea(), required=False )
+    email = forms.EmailField(label='e-mail', max_length=200)
